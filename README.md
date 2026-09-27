@@ -28,8 +28,7 @@ Across multiple doctors, labs, and outpatient visits, critical directives get lo
 
 ---
 
-## 2. Why Hindsight is Mandatory (25% Judging Weight)
-
+## 2. Why Hindsight Matters (25% Judging Weight)
 Traditional chat buffers and stateless LLMs suffer from complete amnesia between clinical visits. If you remove Hindsight, the agent degrades to asking clinicians to re-explain the patient's entire medical history every time.
 
 ```
@@ -37,7 +36,7 @@ WITHOUT HINDSIGHT:
 Session 1 ──> Stateless LLM ──> Memory Reset (0 Context) ──> Session 2 (Fails with amnesia)
 
 WITH HINDSIGHT:
-Visit 1 ──> Retain (Typed Facts) ──> Multi-Strategy Recall ──> Visit 4 (Recalls pending test from 2 weeks ago)
+Visit 1 ──> Retain → Recall → LLM Synthesis ──> Visit 4 (Recalls pending test from 2 weeks ago)
 ```
 
 ### The Difference in Practice:
@@ -53,8 +52,8 @@ Visit 1 ──> Retain (Typed Facts) ──> Multi-Strategy Recall ──> Visit
                            │
                            ▼
                     ┌──────────────┐
-                    │ Healthcare   │
-                    │ Staff / Desk │
+                    │ Node/Express │
+                    │    Backend   │
                     └──────┬───────┘
                            │
                     "Record Encounter"
@@ -97,26 +96,33 @@ Visit 1 ──> Retain (Typed Facts) ──> Multi-Strategy Recall ──> Visit
 ```
 
 ### Structured DB vs. Hindsight Memory
-| Capability | Structured DB (MongoDB / JSON Store) | Hindsight Agent Memory |
+| Capability | Structured application data (JSON) | Hindsight Agent Memory |
 | :--- | :--- | :--- |
 | **Primary Question** | *"What static records exist?"* | *"What does the agent remember and learn from previous interactions?"* |
 | **Data Nature** | Tabular demographics, timestamps, audit IDs | Associative facts, directives, conditional dependencies |
-| **Retrieval Mode** | Exact primary key queries | Semantic + BM25 + Entity graph traversal + Temporal weighting |
+| **Retrieval Mode** | Exact primary key queries | Multi-strategy memory retrieval |
 
 ---
 
 ## 4. The 60-Second Judge Demo Storyboard
 
-1. **0:00 - 0:15 (The Cohort):**  
-   Open Dashboard at `http://localhost:3000`. Show synthetic patient cohort. Point out the active **"Hindsight Memory: Active"** status badge in the navbar.
+1. **0:00 - 0:15 (The Patient):**  
+   Open the live dashboard at `https://care-continuity-agent.vercel.app`.
+   Show the synthetic patient cohort and the active **"Hindsight Memory: Active"** status.
+
 2. **0:15 - 0:30 (Ravi Kumar's Journey):**  
-   Click **Ravi Kumar (P001)**. Open **Journey Timeline** showing Jan 10 (GP), Jan 14 (Lab results: elevated transaminases), and Jan 20 (Specialist Dr. Mehta).
+   Open **Ravi Kumar (P001)** and show the patient's previous encounters and timeline.
+
 3. **0:30 - 0:45 (The Recall Moment):**  
-   Switch to **Care Continuity Agent** tab and click *"What are we waiting for?"*. The agent uses Hindsight recall to pinpoint that the **Abdominal Ultrasound** is still pending, blocking Dr. Mehta's care plan.
-4. **0:45 - 0:55 (Before vs After Memory):**  
-   Switch to **Before vs After Memory** tab. Show the stark contrast: the stateless LLM has complete amnesia, while Hindsight recalls 29 structured memories.
-5. **0:55 - 1:00 (Transparent Memory Bank):**  
-   Click **Memory Explorer** in the navbar to expose the live Hindsight memory bank, category distribution, and similarity scores.
+   Open **Care Continuity Agent** and ask:
+   *"What are we currently waiting for?"*
+   The agent recalls relevant Hindsight memories and identifies the **Abdominal Ultrasound** as the current continuity blocker.
+
+4. **0:45 - 0:55 (Memory Evidence):**  
+   Show the **8 memories recalled** and the recalled-memory evidence supporting the response.
+
+5. **0:55 - 1:00 (Transparent Memory):**  
+   Open **Memory Explorer** to show the stored patient memory and demonstrate that the response is grounded in persistent memory.
 
 ---
 
@@ -140,10 +146,9 @@ cd frontend
 npm install
 npm run dev
 ```
-*Frontend runs on `http://localhost:3000` (automatically proxies `/api` requests to backend).*
+*Frontend runs on `http://localhost:3000` (Frontend runs on the configured Vite development port.).*
+VITE_API_URL=http://localhost:5001/api
 
-### Configuration (.env)
-The backend comes with an out-of-the-box biomimetic local memory engine that replicates Hindsight's retain, multi-strategy recall, and bank inspection with zero cloud credentials required.
 
 To connect to live **Hindsight Cloud** or a self-hosted instance, simply copy `.env.example` to `.env`:
 ```env
