@@ -1,0 +1,1235 @@
+{
+  "patient_P001": {
+    "bankId": "patient_P001",
+    "patientId": "P001",
+    "createdAt": "2026-09-27T13:10:24.681Z",
+    "memories": [
+      {
+        "id": "mem-1790514624682-0",
+        "content": "On 2026-01-10, patient had Initial Consultation with Dr. Anita Roy (General Physician). Reason/Concern: Recurring abdominal discomfort and post-prandial fullness...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "general-physician"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-10",
+          "provider": "Dr. Anita Roy",
+          "role": "General Physician",
+          "encounterType": "Initial Consultation"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624682-1",
+        "content": "WARNING - Pending investigations as of 2026-01-10: CBC, LFT, Abdominal Ultrasound. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "CBC",
+            "LFT",
+            "Abdominal Ultrasound"
+          ],
+          "date": "2026-01-10"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-2",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-10: \"Order CBC, LFT, and Abdominal Ultrasound\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Order CBC, LFT, and Abdominal Ultrasound",
+          "date": "2026-01-10"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-3",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-10: \"Return for clinical review after test reports\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Return for clinical review after test reports",
+          "date": "2026-01-10"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-4",
+        "content": "Follow-up requirement established on 2026-01-10 by Dr. Anita Roy: Return after test reports are available. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Return after test reports are available",
+          "date": "2026-01-10"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624682-5",
+        "content": "Continuity gap flagged on 2026-01-10: Diagnostic tests pending completion",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Diagnostic tests pending completion",
+          "date": "2026-01-10"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-6",
+        "content": "On 2026-01-14, patient had Investigation Result with Dr. Anita Roy / Diagnostic Center (General Physician). Reason/Concern: Elevated transaminases (ALT 68, AST 54)...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "general-physician"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-14",
+          "provider": "Dr. Anita Roy / Diagnostic Center",
+          "role": "General Physician",
+          "encounterType": "Investigation Result"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624682-7",
+        "content": "Diagnostic tests completed by 2026-01-14: Complete Blood Count (CBC), Liver Function Tests (LFT). Results reviewed in clinical context.",
+        "tags": [
+          "investigation",
+          "test-completed",
+          "laboratory"
+        ],
+        "metadata": {
+          "category": "investigation",
+          "status": "completed",
+          "tests": [
+            "Complete Blood Count (CBC)",
+            "Liver Function Tests (LFT)"
+          ],
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "investigation"
+      },
+      {
+        "id": "mem-1790514624682-8",
+        "content": "WARNING - Pending investigations as of 2026-01-14: Abdominal Ultrasound. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Abdominal Ultrasound"
+          ],
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-9",
+        "content": "Clinical recommendation from Dr. Anita Roy / Diagnostic Center (General Physician) on 2026-01-14: \"Gastroenterology specialist consultation for elevated transaminases\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy / Diagnostic Center",
+          "recommendation": "Gastroenterology specialist consultation for elevated transaminases",
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-10",
+        "content": "Clinical recommendation from Dr. Anita Roy / Diagnostic Center (General Physician) on 2026-01-14: \"Reschedule abdominal ultrasound\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy / Diagnostic Center",
+          "recommendation": "Reschedule abdominal ultrasound",
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-11",
+        "content": "Follow-up requirement established on 2026-01-14 by Dr. Anita Roy / Diagnostic Center: Specialist consultation. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Specialist consultation",
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624682-12",
+        "content": "Continuity gap flagged on 2026-01-14: Abdominal Ultrasound still pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Abdominal Ultrasound still pending",
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-13",
+        "content": "Continuity gap flagged on 2026-01-14: Specialist evaluation needed",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Specialist evaluation needed",
+          "date": "2026-01-14"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-14",
+        "content": "On 2026-01-20, patient had Specialist Consultation with Dr. Sameer Mehta (Gastroenterologist). Reason/Concern: Transaminitis with right upper quadrant tenderness...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "gastroenterologist"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-20",
+          "provider": "Dr. Sameer Mehta",
+          "role": "Gastroenterologist",
+          "encounterType": "Specialist Consultation"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624682-15",
+        "content": "Diagnostic tests completed by 2026-01-20: LFT reviewed by specialist. Results reviewed in clinical context.",
+        "tags": [
+          "investigation",
+          "test-completed",
+          "laboratory"
+        ],
+        "metadata": {
+          "category": "investigation",
+          "status": "completed",
+          "tests": [
+            "LFT reviewed by specialist"
+          ],
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "investigation"
+      },
+      {
+        "id": "mem-1790514624682-16",
+        "content": "WARNING - Pending investigations as of 2026-01-20: Abdominal Ultrasound. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Abdominal Ultrasound"
+          ],
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-17",
+        "content": "Clinical recommendation from Dr. Sameer Mehta (Gastroenterologist) on 2026-01-20: \"Undergo pending Abdominal Ultrasound immediately\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Sameer Mehta",
+          "recommendation": "Undergo pending Abdominal Ultrasound immediately",
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-18",
+        "content": "Clinical recommendation from Dr. Sameer Mehta (Gastroenterologist) on 2026-01-20: \"Follow up with Dr. Mehta after ultrasound results are available\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Sameer Mehta",
+          "recommendation": "Follow up with Dr. Mehta after ultrasound results are available",
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-19",
+        "content": "Follow-up requirement established on 2026-01-20 by Dr. Sameer Mehta: Return to Dr. Mehta with ultrasound report. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Return to Dr. Mehta with ultrasound report",
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624682-20",
+        "content": "Continuity gap flagged on 2026-01-20: Abdominal Ultrasound is critical blocker for treatment plan",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Abdominal Ultrasound is critical blocker for treatment plan",
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-21",
+        "content": "Continuity gap flagged on 2026-01-20: Specialist review pending ultrasound",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Specialist review pending ultrasound",
+          "date": "2026-01-20"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-22",
+        "content": "On 2026-02-05, patient had Follow-up Check with Clinical Care Coordinator (Follow-up Staff). Reason/Concern: Delayed diagnostic imaging and pending specialist review...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "follow-up-staff"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-02-05",
+          "provider": "Clinical Care Coordinator",
+          "role": "Follow-up Staff",
+          "encounterType": "Follow-up Check"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624682-23",
+        "content": "WARNING - Pending investigations as of 2026-02-05: Abdominal Ultrasound. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Abdominal Ultrasound"
+          ],
+          "date": "2026-02-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-24",
+        "content": "Clinical recommendation from Clinical Care Coordinator (Follow-up Staff) on 2026-02-05: \"Expedite abdominal ultrasound\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Clinical Care Coordinator",
+          "recommendation": "Expedite abdominal ultrasound",
+          "date": "2026-02-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-25",
+        "content": "Clinical recommendation from Clinical Care Coordinator (Follow-up Staff) on 2026-02-05: \"Schedule follow-up consultation with Dr. Mehta once imaging is confirmed\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Clinical Care Coordinator",
+          "recommendation": "Schedule follow-up consultation with Dr. Mehta once imaging is confirmed",
+          "date": "2026-02-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624682-26",
+        "content": "Follow-up requirement established on 2026-02-05 by Clinical Care Coordinator: Specialist follow-up after ultrasound. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Specialist follow-up after ultrasound",
+          "date": "2026-02-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624682-27",
+        "content": "Continuity gap flagged on 2026-02-05: Abdominal Ultrasound pending for >2 weeks",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Abdominal Ultrasound pending for >2 weeks",
+          "date": "2026-02-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624682-28",
+        "content": "Continuity gap flagged on 2026-02-05: Follow-up with specialist pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Follow-up with specialist pending",
+          "date": "2026-02-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.682Z",
+        "type": "unresolved"
+      }
+    ],
+    "updatedAt": "2026-09-27T13:10:24.682Z"
+  },
+  "patient_P002": {
+    "bankId": "patient_P002",
+    "patientId": "P002",
+    "createdAt": "2026-09-27T13:10:24.683Z",
+    "memories": [
+      {
+        "id": "mem-1790514624683-0",
+        "content": "On 2026-01-15, patient had Initial Consultation with Dr. Anita Roy (General Physician). Reason/Concern: Refractory hypertension (BP 152/96 mmHg)...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "general-physician"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-15",
+          "provider": "Dr. Anita Roy",
+          "role": "General Physician",
+          "encounterType": "Initial Consultation"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624683-1",
+        "content": "WARNING - Pending investigations as of 2026-01-15: Renal Artery Doppler, Serum Electrolytes & Creatinine. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Renal Artery Doppler",
+            "Serum Electrolytes & Creatinine"
+          ],
+          "date": "2026-01-15"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-2",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-15: \"Nephrology consultation\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Nephrology consultation",
+          "date": "2026-01-15"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-3",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-15: \"Renal artery Doppler ultrasound\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Renal artery Doppler ultrasound",
+          "date": "2026-01-15"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-4",
+        "content": "Follow-up requirement established on 2026-01-15 by Dr. Anita Roy: Review with Nephrologist. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Review with Nephrologist",
+          "date": "2026-01-15"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624683-5",
+        "content": "Continuity gap flagged on 2026-01-15: Secondary hypertension workup pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Secondary hypertension workup pending",
+          "date": "2026-01-15"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-6",
+        "content": "On 2026-01-22, patient had Specialist Consultation with Dr. K. Sen (Nephrologist). Reason/Concern: Essential refractory hypertension management...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "nephrologist"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-22",
+          "provider": "Dr. K. Sen",
+          "role": "Nephrologist",
+          "encounterType": "Specialist Consultation"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624683-7",
+        "content": "Diagnostic tests completed by 2026-01-22: Renal Artery Doppler, Serum Electrolytes & Creatinine. Results reviewed in clinical context.",
+        "tags": [
+          "investigation",
+          "test-completed",
+          "laboratory"
+        ],
+        "metadata": {
+          "category": "investigation",
+          "status": "completed",
+          "tests": [
+            "Renal Artery Doppler",
+            "Serum Electrolytes & Creatinine"
+          ],
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "investigation"
+      },
+      {
+        "id": "mem-1790514624683-8",
+        "content": "WARNING - Pending investigations as of 2026-01-22: Repeat serum potassium (due Feb 19). Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Repeat serum potassium (due Feb 19)"
+          ],
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-9",
+        "content": "Clinical recommendation from Dr. K. Sen (Nephrologist) on 2026-01-22: \"Lisinopril 20mg + Amlodipine 5mg\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. K. Sen",
+          "recommendation": "Lisinopril 20mg + Amlodipine 5mg",
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-10",
+        "content": "Clinical recommendation from Dr. K. Sen (Nephrologist) on 2026-01-22: \"Maintain twice-daily 4-week home BP log\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. K. Sen",
+          "recommendation": "Maintain twice-daily 4-week home BP log",
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-11",
+        "content": "Clinical recommendation from Dr. K. Sen (Nephrologist) on 2026-01-22: \"Repeat serum potassium in 4 weeks\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. K. Sen",
+          "recommendation": "Repeat serum potassium in 4 weeks",
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-12",
+        "content": "Follow-up requirement established on 2026-01-22 by Dr. K. Sen: Review BP log and serum potassium in 4 weeks. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Review BP log and serum potassium in 4 weeks",
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624683-13",
+        "content": "Continuity gap flagged on 2026-01-22: Home BP log in progress",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Home BP log in progress",
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-14",
+        "content": "Continuity gap flagged on 2026-01-22: Serum potassium repeat test scheduled",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Serum potassium repeat test scheduled",
+          "date": "2026-01-22"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      }
+    ],
+    "updatedAt": "2026-09-27T13:10:24.683Z"
+  },
+  "patient_P003": {
+    "bankId": "patient_P003",
+    "patientId": "P003",
+    "createdAt": "2026-09-27T13:10:24.683Z",
+    "memories": [
+      {
+        "id": "mem-1790514624683-0",
+        "content": "On 2026-01-05, patient had Post-Op Consultation with Dr. V. Verma (Orthopedic Surgeon). Reason/Concern: Right knee post-arthroplasty rehabilitation...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "orthopedic-surgeon"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-05",
+          "provider": "Dr. V. Verma",
+          "role": "Orthopedic Surgeon",
+          "encounterType": "Post-Op Consultation"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624683-1",
+        "content": "WARNING - Pending investigations as of 2026-01-05: Bilateral standing knee X-rays. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Bilateral standing knee X-rays"
+          ],
+          "date": "2026-01-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-2",
+        "content": "Clinical recommendation from Dr. V. Verma (Orthopedic Surgeon) on 2026-01-05: \"Outpatient PT 3x per week\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. V. Verma",
+          "recommendation": "Outpatient PT 3x per week",
+          "date": "2026-01-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-3",
+        "content": "Clinical recommendation from Dr. V. Verma (Orthopedic Surgeon) on 2026-01-05: \"Bilateral standing knee X-rays prior to 12-week review\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. V. Verma",
+          "recommendation": "Bilateral standing knee X-rays prior to 12-week review",
+          "date": "2026-01-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-4",
+        "content": "Follow-up requirement established on 2026-01-05 by Dr. V. Verma: 12-week surgical review with X-rays. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "12-week surgical review with X-rays",
+          "date": "2026-01-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624683-5",
+        "content": "Continuity gap flagged on 2026-01-05: Standing radiographs pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Standing radiographs pending",
+          "date": "2026-01-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-6",
+        "content": "Continuity gap flagged on 2026-01-05: 12-week post-op review",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "12-week post-op review",
+          "date": "2026-01-05"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-7",
+        "content": "On 2026-01-28, patient had Therapy Milestone with Sarah Jenkins, PT (Physical Therapist). Reason/Concern: Rehabilitation milestone tracking...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "physical-therapist"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-28",
+          "provider": "Sarah Jenkins, PT",
+          "role": "Physical Therapist",
+          "encounterType": "Therapy Milestone"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624683-8",
+        "content": "WARNING - Pending investigations as of 2026-01-28: Bilateral standing knee X-rays. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Bilateral standing knee X-rays"
+          ],
+          "date": "2026-01-28"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-9",
+        "content": "Clinical recommendation from Sarah Jenkins, PT (Physical Therapist) on 2026-01-28: \"Continue home strengthening program\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Sarah Jenkins, PT",
+          "recommendation": "Continue home strengthening program",
+          "date": "2026-01-28"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-10",
+        "content": "Clinical recommendation from Sarah Jenkins, PT (Physical Therapist) on 2026-01-28: \"Schedule standing X-ray before surgeon review\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Sarah Jenkins, PT",
+          "recommendation": "Schedule standing X-ray before surgeon review",
+          "date": "2026-01-28"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-11",
+        "content": "Follow-up requirement established on 2026-01-28 by Sarah Jenkins, PT: Surgeon review at 12 weeks. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Surgeon review at 12 weeks",
+          "date": "2026-01-28"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624683-12",
+        "content": "Continuity gap flagged on 2026-01-28: Bilateral standing radiographs remain pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Bilateral standing radiographs remain pending",
+          "date": "2026-01-28"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      }
+    ],
+    "updatedAt": "2026-09-27T13:10:24.683Z"
+  },
+  "patient_P004": {
+    "bankId": "patient_P004",
+    "patientId": "P004",
+    "createdAt": "2026-09-27T13:10:24.683Z",
+    "memories": [
+      {
+        "id": "mem-1790514624683-0",
+        "content": "On 2026-01-12, patient had Initial Consultation with Dr. Anita Roy (General Physician). Reason/Concern: Fatigue and cold intolerance...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "general-physician"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-12",
+          "provider": "Dr. Anita Roy",
+          "role": "General Physician",
+          "encounterType": "Initial Consultation"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624683-1",
+        "content": "WARNING - Pending investigations as of 2026-01-12: TSH, Free T4, Anti-TPO antibodies. Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "TSH",
+            "Free T4",
+            "Anti-TPO antibodies"
+          ],
+          "date": "2026-01-12"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-2",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-12: \"Complete thyroid laboratory panel\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Complete thyroid laboratory panel",
+          "date": "2026-01-12"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-3",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-12: \"Review once results available\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Review once results available",
+          "date": "2026-01-12"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-4",
+        "content": "Follow-up requirement established on 2026-01-12 by Dr. Anita Roy: Return after thyroid panel. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Return after thyroid panel",
+          "date": "2026-01-12"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624683-5",
+        "content": "Continuity gap flagged on 2026-01-12: Thyroid laboratory panel pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Thyroid laboratory panel pending",
+          "date": "2026-01-12"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-6",
+        "content": "On 2026-01-16, patient had Investigation Result with Dr. Anita Roy (General Physician). Reason/Concern: Mild subclinical hypothyroidism (TSH 6.8)...",
+        "tags": [
+          "encounter",
+          "consultation",
+          "general-physician"
+        ],
+        "metadata": {
+          "category": "encounter",
+          "date": "2026-01-16",
+          "provider": "Dr. Anita Roy",
+          "role": "General Physician",
+          "encounterType": "Investigation Result"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "encounter"
+      },
+      {
+        "id": "mem-1790514624683-7",
+        "content": "Diagnostic tests completed by 2026-01-16: TSH, Free T4, Anti-TPO antibodies. Results reviewed in clinical context.",
+        "tags": [
+          "investigation",
+          "test-completed",
+          "laboratory"
+        ],
+        "metadata": {
+          "category": "investigation",
+          "status": "completed",
+          "tests": [
+            "TSH",
+            "Free T4",
+            "Anti-TPO antibodies"
+          ],
+          "date": "2026-01-16"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "investigation"
+      },
+      {
+        "id": "mem-1790514624683-8",
+        "content": "WARNING - Pending investigations as of 2026-01-16: Repeat TSH (due late February 2026). Clinical decisions depend on these results.",
+        "tags": [
+          "investigation",
+          "test-pending",
+          "unresolved",
+          "continuity-blocker"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "status": "pending",
+          "tests": [
+            "Repeat TSH (due late February 2026)"
+          ],
+          "date": "2026-01-16"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      },
+      {
+        "id": "mem-1790514624683-9",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-16: \"Lifestyle and dietary support\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Lifestyle and dietary support",
+          "date": "2026-01-16"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-10",
+        "content": "Clinical recommendation from Dr. Anita Roy (General Physician) on 2026-01-16: \"Repeat TSH in 6 weeks prior to medication decision\".",
+        "tags": [
+          "recommendation",
+          "clinical-directive"
+        ],
+        "metadata": {
+          "category": "recommendation",
+          "provider": "Dr. Anita Roy",
+          "recommendation": "Repeat TSH in 6 weeks prior to medication decision",
+          "date": "2026-01-16"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "recommendation"
+      },
+      {
+        "id": "mem-1790514624683-11",
+        "content": "Follow-up requirement established on 2026-01-16 by Dr. Anita Roy: Review repeat TSH report in 6 weeks. Status: Pending completion.",
+        "tags": [
+          "followup",
+          "care-plan",
+          "pending"
+        ],
+        "metadata": {
+          "category": "followup",
+          "condition": "Review repeat TSH report in 6 weeks",
+          "date": "2026-01-16"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "followup"
+      },
+      {
+        "id": "mem-1790514624683-12",
+        "content": "Continuity gap flagged on 2026-01-16: Repeat TSH confirmation test pending",
+        "tags": [
+          "unresolved",
+          "continuity-gap",
+          "alert"
+        ],
+        "metadata": {
+          "category": "unresolved",
+          "gap": "Repeat TSH confirmation test pending",
+          "date": "2026-01-16"
+        },
+        "retainedAt": "2026-09-27T13:10:24.683Z",
+        "type": "unresolved"
+      }
+    ],
+    "updatedAt": "2026-09-27T13:10:24.683Z"
+  }
+}

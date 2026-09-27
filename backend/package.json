@@ -1,0 +1,17 @@
+{
+  "name": "care-continuity-backend",
+  "version": "1.0.0",
+  "description": "Backend API for CareContinuity: A Memory-Powered Patient Journey Assistant using Hindsight",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  }
+}

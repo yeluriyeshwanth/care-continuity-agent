@@ -1,0 +1,192 @@
+[
+  {
+    "id": "INT-001",
+    "patientId": "P001",
+    "date": "2026-01-10",
+    "provider": "Dr. Anita Roy",
+    "role": "General Physician",
+    "type": "Initial Consultation",
+    "notes": "Patient presents with a 3-week history of recurring upper abdominal discomfort and post-prandial fullness. Vital signs stable. Mild epigastric tenderness on palpation, no guarding. Recommended comprehensive blood work (CBC, Liver Function Tests) and an abdominal ultrasound to rule out biliary or hepatic etiology. Advised patient to return for review once diagnostic reports are completed.",
+    "extracted": {
+      "concern": "Recurring abdominal discomfort and post-prandial fullness",
+      "investigationsOrdered": ["Complete Blood Count (CBC)", "Liver Function Tests (LFT)", "Abdominal Ultrasound"],
+      "investigationsCompleted": [],
+      "investigationsPending": ["CBC", "LFT", "Abdominal Ultrasound"],
+      "recommendations": ["Order CBC, LFT, and Abdominal Ultrasound", "Return for clinical review after test reports"],
+      "followUpRequired": true,
+      "followUpCondition": "Return after test reports are available",
+      "unresolvedGaps": ["Diagnostic tests pending completion"]
+    }
+  },
+  {
+    "id": "INT-002",
+    "patientId": "P001",
+    "date": "2026-01-14",
+    "provider": "Dr. Anita Roy / Diagnostic Center",
+    "role": "General Physician",
+    "type": "Investigation Result",
+    "notes": "Blood test results received and uploaded to record. CBC within normal limits (Hb 14.2 g/dL, WBC 7,100). Liver Function Test reveals elevated ALT (68 U/L) and AST (54 U/L), indicating mild hepatocellular inflammation. Bilirubin normal (0.9 mg/dL). Abdominal ultrasound could not be performed today due to scheduling backlog and is currently pending. Patient referred to Gastroenterology specialist for evaluation of elevated transaminases.",
+    "extracted": {
+      "concern": "Elevated transaminases (ALT 68, AST 54)",
+      "investigationsOrdered": [],
+      "investigationsCompleted": ["Complete Blood Count (CBC)", "Liver Function Tests (LFT)"],
+      "investigationsPending": ["Abdominal Ultrasound"],
+      "recommendations": ["Gastroenterology specialist consultation for elevated transaminases", "Reschedule abdominal ultrasound"],
+      "followUpRequired": true,
+      "followUpCondition": "Specialist consultation",
+      "unresolvedGaps": ["Abdominal Ultrasound still pending", "Specialist evaluation needed"]
+    }
+  },
+  {
+    "id": "INT-003",
+    "patientId": "P001",
+    "date": "2026-01-20",
+    "provider": "Dr. Sameer Mehta",
+    "role": "Gastroenterologist",
+    "type": "Specialist Consultation",
+    "notes": "Specialist review of Ravi Kumar. Reviewed LFT showing transaminitis. Patient reports persistent dull discomfort in right upper quadrant, exacerbated after fatty meals. Exam confirms right hypochondriac tenderness without Murphy's sign. Specialist discussed findings and emphasized that definitive diagnosis and management plan depend on imaging. Recommended patient undergo the pending Abdominal Ultrasound without delay. Follow-up consultation scheduled to review ultrasound imaging and formulate treatment protocol.",
+    "extracted": {
+      "concern": "Transaminitis with right upper quadrant tenderness",
+      "investigationsOrdered": [],
+      "investigationsCompleted": ["LFT reviewed by specialist"],
+      "investigationsPending": ["Abdominal Ultrasound"],
+      "recommendations": ["Undergo pending Abdominal Ultrasound immediately", "Follow up with Dr. Mehta after ultrasound results are available"],
+      "followUpRequired": true,
+      "followUpCondition": "Return to Dr. Mehta with ultrasound report",
+      "unresolvedGaps": ["Abdominal Ultrasound is critical blocker for treatment plan", "Specialist review pending ultrasound"]
+    }
+  },
+  {
+    "id": "INT-004",
+    "patientId": "P001",
+    "date": "2026-02-05",
+    "provider": "Clinical Care Coordinator",
+    "role": "Follow-up Staff",
+    "type": "Follow-up Check",
+    "notes": "Follow-up desk outreach. Patient checked in regarding upcoming appointment. Checked diagnostic records: Abdominal Ultrasound has NOT yet been uploaded and remains pending. Patient instructed to complete the ultrasound prior to seeing Dr. Mehta. Last clinical interaction was 16 days ago. Case flagged for clinical continuity.",
+    "extracted": {
+      "concern": "Delayed diagnostic imaging and pending specialist review",
+      "investigationsOrdered": [],
+      "investigationsCompleted": [],
+      "investigationsPending": ["Abdominal Ultrasound"],
+      "recommendations": ["Expedite abdominal ultrasound", "Schedule follow-up consultation with Dr. Mehta once imaging is confirmed"],
+      "followUpRequired": true,
+      "followUpCondition": "Specialist follow-up after ultrasound",
+      "unresolvedGaps": ["Abdominal Ultrasound pending for >2 weeks", "Follow-up with specialist pending"]
+    }
+  },
+  {
+    "id": "INT-005",
+    "patientId": "P002",
+    "date": "2026-01-15",
+    "provider": "Dr. Anita Roy",
+    "role": "General Physician",
+    "type": "Initial Consultation",
+    "notes": "Ananya Rao presents for routine hypertension follow-up. Clinic blood pressure 152/96 mmHg despite Lisinopril 10mg daily for 3 months. No chest pain, dyspnea, or visual disturbances. Ordered renal artery Doppler ultrasound and comprehensive metabolic panel (serum creatinine, electrolytes). Referred to Nephrology for secondary hypertension workup.",
+    "extracted": {
+      "concern": "Refractory hypertension (BP 152/96 mmHg)",
+      "investigationsOrdered": ["Renal Artery Doppler Ultrasound", "Serum Electrolytes & Creatinine"],
+      "investigationsCompleted": [],
+      "investigationsPending": ["Renal Artery Doppler", "Serum Electrolytes & Creatinine"],
+      "recommendations": ["Nephrology consultation", "Renal artery Doppler ultrasound"],
+      "followUpRequired": true,
+      "followUpCondition": "Review with Nephrologist",
+      "unresolvedGaps": ["Secondary hypertension workup pending"]
+    }
+  },
+  {
+    "id": "INT-006",
+    "patientId": "P002",
+    "date": "2026-01-22",
+    "provider": "Dr. K. Sen",
+    "role": "Nephrologist",
+    "type": "Specialist Consultation",
+    "notes": "Nephrology evaluation. Renal artery Doppler demonstrates normal resistive indices without renal artery stenosis. Serum creatinine 0.85 mg/dL, potassium 4.2 mEq/L. Diagnosed essential refractory hypertension. Upped Lisinopril to 20mg daily and added Amlodipine 5mg daily. Instructed patient to maintain a 4-week home BP log twice daily. Recommended repeat serum potassium check in 4 weeks.",
+    "extracted": {
+      "concern": "Essential refractory hypertension management",
+      "investigationsOrdered": ["Repeat serum potassium in 4 weeks"],
+      "investigationsCompleted": ["Renal Artery Doppler", "Serum Electrolytes & Creatinine"],
+      "investigationsPending": ["Repeat serum potassium (due Feb 19)"],
+      "recommendations": ["Lisinopril 20mg + Amlodipine 5mg", "Maintain twice-daily 4-week home BP log", "Repeat serum potassium in 4 weeks"],
+      "followUpRequired": true,
+      "followUpCondition": "Review BP log and serum potassium in 4 weeks",
+      "unresolvedGaps": ["Home BP log in progress", "Serum potassium repeat test scheduled"]
+    }
+  },
+  {
+    "id": "INT-007",
+    "patientId": "P003",
+    "date": "2026-01-05",
+    "provider": "Dr. V. Verma",
+    "role": "Orthopedic Surgeon",
+    "type": "Post-Op Consultation",
+    "notes": "6-week post right total knee arthroplasty review for Arjun Mehta. Incision healed, no signs of infection or effusion. Passive flexion 85 degrees, extension lag 5 degrees. Prescribed outpatient physical therapy 3x weekly focusing on quadriceps strengthening and active range of motion. Ordered bilateral weight-bearing standing knee radiographs to be taken prior to the 12-week review.",
+    "extracted": {
+      "concern": "Right knee post-arthroplasty rehabilitation",
+      "investigationsOrdered": ["Bilateral standing knee X-rays"],
+      "investigationsCompleted": [],
+      "investigationsPending": ["Bilateral standing knee X-rays"],
+      "recommendations": ["Outpatient PT 3x per week", "Bilateral standing knee X-rays prior to 12-week review"],
+      "followUpRequired": true,
+      "followUpCondition": "12-week surgical review with X-rays",
+      "unresolvedGaps": ["Standing radiographs pending", "12-week post-op review"]
+    }
+  },
+  {
+    "id": "INT-008",
+    "patientId": "P003",
+    "date": "2026-01-28",
+    "provider": "Sarah Jenkins, PT",
+    "role": "Physical Therapist",
+    "type": "Therapy Milestone",
+    "notes": "Completed session 8 of physical therapy. Patient demonstrating significant functional progress: active knee flexion reached 105 degrees, extension lag resolved. Ambulation with single-point cane. Patient reminded that Dr. Verma requires bilateral standing knee X-rays prior to their 12-week clinical review in mid-February.",
+    "extracted": {
+      "concern": "Rehabilitation milestone tracking",
+      "investigationsOrdered": [],
+      "investigationsCompleted": [],
+      "investigationsPending": ["Bilateral standing knee X-rays"],
+      "recommendations": ["Continue home strengthening program", "Schedule standing X-ray before surgeon review"],
+      "followUpRequired": true,
+      "followUpCondition": "Surgeon review at 12 weeks",
+      "unresolvedGaps": ["Bilateral standing radiographs remain pending"]
+    }
+  },
+  {
+    "id": "INT-009",
+    "patientId": "P004",
+    "date": "2026-01-12",
+    "provider": "Dr. Anita Roy",
+    "role": "General Physician",
+    "type": "Initial Consultation",
+    "notes": "Priya Sharma reports progressive fatigue, cold intolerance, and mild dry skin over the past 2 months. No anterior neck swelling or tenderness. Normal BMI, heart rate 64 bpm. Ordered thyroid function panel (TSH, Free T4) and anti-TPO antibodies.",
+    "extracted": {
+      "concern": "Fatigue and cold intolerance",
+      "investigationsOrdered": ["TSH", "Free T4", "Anti-TPO antibodies"],
+      "investigationsCompleted": [],
+      "investigationsPending": ["TSH", "Free T4", "Anti-TPO antibodies"],
+      "recommendations": ["Complete thyroid laboratory panel", "Review once results available"],
+      "followUpRequired": true,
+      "followUpCondition": "Return after thyroid panel",
+      "unresolvedGaps": ["Thyroid laboratory panel pending"]
+    }
+  },
+  {
+    "id": "INT-010",
+    "patientId": "P004",
+    "date": "2026-01-16",
+    "provider": "Dr. Anita Roy",
+    "role": "General Physician",
+    "type": "Investigation Result",
+    "notes": "Laboratory review. TSH elevated at 6.8 uIU/mL (normal 0.4-4.0). Free T4 normal at 1.1 ng/dL. Anti-TPO antibodies negative. Consistent with mild subclinical hypothyroidism. Patient is currently mildly symptomatic. Per clinical guidelines, recommended lifestyle measures and a repeat TSH in 6 weeks to determine if elevation is persistent before initiating hormone replacement therapy.",
+    "extracted": {
+      "concern": "Mild subclinical hypothyroidism (TSH 6.8)",
+      "investigationsOrdered": ["Repeat TSH in 6 weeks"],
+      "investigationsCompleted": ["TSH", "Free T4", "Anti-TPO antibodies"],
+      "investigationsPending": ["Repeat TSH (due late February 2026)"],
+      "recommendations": ["Lifestyle and dietary support", "Repeat TSH in 6 weeks prior to medication decision"],
+      "followUpRequired": true,
+      "followUpCondition": "Review repeat TSH report in 6 weeks",
+      "unresolvedGaps": ["Repeat TSH confirmation test pending"]
+    }
+  }
+]

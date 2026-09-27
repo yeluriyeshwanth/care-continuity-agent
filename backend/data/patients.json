@@ -1,0 +1,58 @@
+[
+  {
+    "id": "P001",
+    "name": "Ravi Kumar",
+    "age": 48,
+    "gender": "Male",
+    "contact": "+91 98450 12345",
+    "bloodGroup": "B+",
+    "primaryConcern": "Recurring abdominal discomfort",
+    "status": "Follow-up Pending",
+    "statusSeverity": "warning",
+    "pendingAction": "Abdominal Ultrasound pending; specialist follow-up awaiting results",
+    "lastInteractionDate": "2026-02-05",
+    "assignedPhysician": "Dr. Sameer Mehta (Gastroenterologist)"
+  },
+  {
+    "id": "P002",
+    "name": "Ananya Rao",
+    "age": 35,
+    "gender": "Female",
+    "contact": "+91 97120 65432",
+    "bloodGroup": "O+",
+    "primaryConcern": "Refractory hypertension evaluation",
+    "status": "Specialist Review",
+    "statusSeverity": "info",
+    "pendingAction": "Review 4-week home BP log and repeat serum electrolytes",
+    "lastInteractionDate": "2026-01-22",
+    "assignedPhysician": "Dr. K. Sen (Nephrologist)"
+  },
+  {
+    "id": "P003",
+    "name": "Arjun Mehta",
+    "age": 62,
+    "gender": "Male",
+    "contact": "+91 98201 77890",
+    "bloodGroup": "A+",
+    "primaryConcern": "Post-total knee replacement rehabilitation",
+    "status": "Test Result Pending",
+    "statusSeverity": "warning",
+    "pendingAction": "Bilateral standing knee X-ray required before 12-week clinical review",
+    "lastInteractionDate": "2026-01-28",
+    "assignedPhysician": "Dr. V. Verma (Orthopedics)"
+  },
+  {
+    "id": "P004",
+    "name": "Priya Sharma",
+    "age": 29,
+    "gender": "Female",
+    "contact": "+91 94480 33211",
+    "bloodGroup": "AB+",
+    "primaryConcern": "Subclinical hypothyroidism workup",
+    "status": "Monitoring",
+    "statusSeverity": "success",
+    "pendingAction": "Repeat TSH blood test in 6 weeks to confirm baseline trend",
+    "lastInteractionDate": "2026-01-16",
+    "assignedPhysician": "Dr. Anita Roy (Internal Medicine)"
+  }
+]
