@@ -18,7 +18,9 @@ Three engineering takeaways:
 2. Negative states (pending tests) are first-class memories.
 3. Decouple canonical CRUD data from associative long-term memory.
 
-#AIAgents #AI #Hindsight #AgentMemory #AIMemory #LLM
+GitHub: https://github.com/yeluriyeshwanth/care-continuity-agent
+
+#AIAgents #Hindsight #AgentMemory #LLM
 ```
 
 ---

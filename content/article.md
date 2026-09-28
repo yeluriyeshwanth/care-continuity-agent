@@ -4,11 +4,11 @@ In clinical healthcare, patient data doesn't fail because it isn't documented—
 
 Most attempts to apply AI to this challenge rush straight toward autonomous diagnosis or prescription generation—a high-liability dead end that clinicians rightfully distrust. We chose a different, much more practical path: **care continuity**. We built **CareContinuity**, an AI agent whose sole responsibility is to track and remember a patient’s longitudinal care journey across interactions and give clinical staff the exact context they need for their next decision.
 
-At the core of this system is [agent memory](https://vectorize.io/what-is-agent-memory). A stateless language model or basic conversation buffer is completely inadequate for longitudinal healthcare workflows; the moment a patient leaves the clinic, the conversational session terminates, and the LLM's context window resets to zero. To give our agent genuine long-term memory across weeks of fragmented visits, we integrated [Hindsight](https://github.com/vectorize-io/hindsight), a biomimetic agent memory architecture built by Vectorize.
+At the core of this system is [agent memory](https://vectorize.io/what-is-agent-memory). A stateless language model or basic conversation buffer is completely inadequate for longitudinal healthcare workflows; the moment a patient leaves the clinic, the conversational session terminates, and the LLM's context window resets to zero. To give our agent genuine long-term memory across weeks of fragmented visits, we integrated [Hindsight](https://github.com/vectorize-io/hindsight), we integrated Hindsight as the persistent memory layer.
 
 Here is how we architected CareContinuity, how we structured memory retention and multi-strategy recall, the code that powers it, and what we learned building an agent that genuinely remembers.
 
----
+
 
 ## What the System Does and How It Hangs Together
 
@@ -21,7 +21,7 @@ Instead of asking the agent *"What disease does this patient have?"*, clinicians
 - *"What did the previous specialist recommend?"*
 
 To make this reliable, we separated our architecture into two distinct layers:
-1. **The Structured Store**: We maintain canonical, tabular entities (patient demographics, appointment timestamps, and encounter metadata).
+1. **The Structured Application Data**: We keep patient profiles and interaction history in structured JSON files, while Hindsight handles the persistent memory and retrieval layer.
 2. **The Long-Term Memory Layer (Hindsight)**: We maintain the agent's accumulated understanding of events, directives, conditional dependencies, and unresolved clinical blockers across time.
 
 ```
@@ -129,7 +129,9 @@ Standard retrieval-augmented generation (RAG) typically relies on single-vector 
 
 For instance, when a doctor asks: *"What are we currently waiting for?"*, a naive semantic vector search often fails because the original note from two weeks earlier contained the phrase *"reschedule abdominal ultrasound due to scheduling backlog"*. There is minimal cosine similarity between *"waiting for"* and *"scheduling backlog"*.
 
-Hindsight solves this by deploying a parallel multi-strategy retrieval pipeline that combines semantic similarity, BM25 keyword matching, graph traversal, and temporal recency. As documented in the [Hindsight documentation](https://hindsight.vectorize.io/), this fusion enables the system to traverse relationships between entities (e.g., Doctor Mehta → recommended → Ultrasound → condition for → Follow-up).
+For our application, recall starts with a query against the patient's dedicated Hindsight memory bank. When Hindsight Cloud is configured, the backend sends the query and retrieval budget to the Hindsight recall API and uses the returned memories as evidence for the response. We also maintain a local fallback retrieval engine for development and resilience, combining keyword matching, clinical concept matching, recency weighting, and unresolved-status weighting.
+
+This separation is important: Hindsight provides the persistent memory layer, while our application decides how the recalled memories are passed into the continuity-generation workflow.
 
 Here is our recall invocation pipeline:
 
@@ -198,7 +200,7 @@ The stateless agent suffers from complete amnesia. The clinician is forced to ma
 > - **Abdominal Ultrasound:** Ordered Jan 10 and reaffirmed Jan 20; **remains pending completion**.  
 >
 > **Previous Clinical Directives:**  
-> - Dr. Sameer Mehta explicitly documented on Jan 20 that definitive diagnosis and management depend on imaging. The patient was instructed to return **immediately after the ultrasound is completed**.  
+> - Dr. Sameer Mehta explicitly documented on Jan 20 that the specialist follow-up was documented as dependent on the imaging result. The patient was instructed to return **immediately after the ultrasound is completed**.  
 >
 > **Recommended Next Step for Attending Clinician:**  
 > - Contact diagnostic imaging to expedite the ultrasound booking before scheduling the specialist follow-up.
