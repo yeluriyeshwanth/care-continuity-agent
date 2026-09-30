@@ -6,6 +6,7 @@
 ---
 
 ## 1. The Core Problem
+
 In healthcare, patient data doesn't fail because it isn't documented—it fails because the **next person handling the case lacks the right context at the right time**.
 
 ```
